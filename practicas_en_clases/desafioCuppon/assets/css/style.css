@@ -1,0 +1,16 @@
+nav,
+form {
+    background-color: #28A745;
+    color: #FFFFFF;
+}
+
+#precioVerde {
+    color: #28A745;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-style: normal;
+}
+
+#seccionFormulario {
+    background-color: #28A745;
+}

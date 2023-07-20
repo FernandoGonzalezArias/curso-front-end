@@ -1,0 +1,95 @@
+body {
+    /* background-color: black; */
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+nav ul li {
+    text-align: center;
+    padding: 15px;
+}
+
+header {
+    background-image: url("../img/bg-header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+#seccion1 {
+    background-color: black;
+    color: white;
+    height: 250px;
+}
+
+#seccion1 img {
+    padding: 10px;
+}
+
+.d-inline-bloque {
+    display: inline-block;
+}
+
+.texto {
+    width: 30%;
+    font-size: small;
+    padding-left: 200px;
+}
+
+#titulo-iguana {
+    font-size: xx-large;
+}
+
+#seccion2 {
+    background-color: #1e1a13;
+    color: white;
+    text-align: center;
+    height: 200px;
+}
+
+#seccion3 {
+    background-color: black;
+}
+
+section img {
+    width: 200px;
+    padding: 60px;
+    margin: 30px;
+}
+
+footer {
+    background-color: #1e1a13;
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding: 15px;
+    font-size: smaller;
+}
+
+#seccion2 i {
+    font-size: 20px;
+    margin-right: 150px;
+}
+
+#seccion2 p {
+    margin-right: 150px;
+    font-size: smaller;
+}
+
+#carac {
+    padding-top: 50px;
+    font-size: xx-large;
+    margin-left: 40px;
+}

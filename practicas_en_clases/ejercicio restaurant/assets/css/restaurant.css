@@ -1,0 +1,79 @@
+#body {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#N {
+    background-color: black;
+}
+
+.titulo {
+    color: gray;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+}
+
+.cartas {
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+
+.formulario1 {
+    background-color: #070707;
+    color: white;
+    width: 350px;
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.formulario2 {
+    background-color: #070707;
+    color: white;
+    width: 350px;
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.tituloFormulario1 {
+    text-align: center;
+}
+
+.footer {
+    padding: 50px;
+    background-image: url(../img/fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 200px;
+
+}
+
+.derechosR {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.destacadoh3 {
+    text-align: center;
+}
+
+.inicioPag {
+    display: flex;
+    margin: auto;
+}
