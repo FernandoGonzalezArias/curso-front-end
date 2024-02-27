@@ -12,43 +12,25 @@
 
     <!--LISTA-->
 
-    <h1>Hola mi nombre es Fernando Gonzalez</h1>
-    ¡¡Me encanta el Bootcamp!!
+    <h1>Tablas</h1>
+
     <hr>
+
     <b> Esta mi lista de prioridades</b> <!-- negrita -->
     <br>
     <u> Esta mi lista de prioridades</u> <!--subrayar  -->
     <br>
     <i>Esta es mi lista de prioridades</i> <!--cursiva-->
 
-    <ul>
-        <li> <b>Basicas</b>
-            <ul>
-                <li>viajar</li>
-            </ul>
-        </li>
-
-        <li> <b>Prioritarias</b>
-            <ul>
-                <li>Aprender cosas nuevas</li>
-                <li>Emprender</li>
-            </ul>
-        </li>
-
-        <li> <b>Urgentes</b>
-            <ul>
-                <li>trabaja</li>
-                <li>descansar</li>
-            </ul>
-        </li>
-    </ul>
-
-    <hr>
-    <hr>
-    <hr>
     <hr>
 
-    <!--TABLA (esto es mala practica xd )  -->
+
+    <!--TABLA  -->
+
+    <!-- tr son filas 
+         td son columnas 
+         thead es fila de titulos
+         th son los titulos de cada td-->
 
     <table border="1">
         <thead>
@@ -102,12 +84,67 @@
             <td>36000</td>
         </tr>
     </table>
-    <hr>
-    <hr>
-    <hr>
+
     <hr>
 
+    <h1>colspan</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="4">ESTO ES UNA TABLA</th> <!--COLSPAN RELLENA LOS ESPACION VACIOS -->
 
+            </tr>
+        </thead>
+
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido </th>
+                <th>Rut</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Fernando</td>
+            <td>Gonzalez</td>
+            <td>18.750.211-k</td>
+            <td>Santiago</td>
+        </tr>
+        <tr>
+            <td>Cristian</td>
+            <td>Arias</td>
+            <td></td>
+            <td>Copiapo</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Angeles</td>
+            <td>18.625.852-1</td>
+            <td>Madrid</td>
+        </tr>
+        <tr>
+            <td>Claudia</td>
+            <td>Narvaez</td>
+            <td>7.159.753-3</td>
+            <td>La Paz</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h1>rowspan</h1>
+    <table border="1">
+        <tr>
+          <th>Name</th>
+          <td>Jill</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Phone</th>
+          <td>555-1234</td>
+        </tr>
+        <tr>
+          <td>555-8745</td>
+      </tr>
+      </table>
 
 </body>
 
