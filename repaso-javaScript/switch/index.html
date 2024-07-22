@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch</title>
+  </head>
+  <body>
+    <h1>switch</h1>
+
+    <script>
+      //---------------------------------------------------------------------------------------------
+      console.log(
+        "-----------------Ejemplo básico de switch----------------------------"
+      );
+
+      // Declaramos una variable llamada 'dia' y la inicializamos con un valor
+      let dia = 3;
+
+      // Usamos una sentencia switch para evaluar el valor de 'dia'
+      switch (dia) {
+        case 1:
+          // Si 'dia' es 1, se ejecuta este bloque
+          console.log("Lunes");
+          break; // Terminamos la ejecución del switch
+
+        case 2:
+          // Si 'dia' es 2, se ejecuta este bloque
+          console.log("Martes");
+          break; // Terminamos la ejecución del switch
+
+        case 3:
+          // Si 'dia' es 3, se ejecuta este bloque
+          console.log("Miércoles");
+          break; // Terminamos la ejecución del switch
+
+        case 4:
+          // Si 'dia' es 4, se ejecuta este bloque
+          console.log("Jueves");
+          break; // Terminamos la ejecución del switch
+
+        case 5:
+          // Si 'dia' es 5, se ejecuta este bloque
+          console.log("Viernes");
+          break; // Terminamos la ejecución del switch
+
+        case 6:
+          // Si 'dia' es 6, se ejecuta este bloque
+          console.log("Sábado");
+          break; // Terminamos la ejecución del switch
+
+        case 7:
+          // Si 'dia' es 7, se ejecuta este bloque
+          console.log("Domingo");
+          break; // Terminamos la ejecución del switch
+
+        default:
+          // Si 'dia' no coincide con ningún case, se ejecuta este bloque
+          console.log("Día no válido");
+          break; // Terminamos la ejecución del switch
+      }
+
+      //---------------------------------------------------------------------------------------------
+      console.log(
+        "-----------------Ejemplo de switch con múltiples casos----------------------------"
+      );
+
+      // Declaramos una variable llamada 'fruta' y la inicializamos con un valor
+      let fruta = "manzana";
+
+      // Usamos una sentencia switch para evaluar el valor de 'fruta'
+      switch (fruta) {
+        case "manzana":
+        case "pera":
+        case "plátano":
+          // Si 'fruta' es "manzana", "pera" o "plátano", se ejecuta este bloque
+          console.log("Esta es una fruta común.");
+          break; // Terminamos la ejecución del switch
+
+        case "mango":
+        case "papaya":
+        case "piña":
+          // Si 'fruta' es "mango", "papaya" o "piña", se ejecuta este bloque
+          console.log("Esta es una fruta tropical.");
+          break; // Terminamos la ejecución del switch
+
+        default:
+          // Si 'fruta' no coincide con ningún case, se ejecuta este bloque
+          console.log("Fruta no reconocida.");
+          break; // Terminamos la ejecución del switch
+      }
+
+      //---------------------------------------------------------------------------------------------
+      console.log(
+        "-----------------Ejemplo de switch sin break (fall-through)----------------------------"
+      );
+
+      let numero = 1;
+
+      // Usamos una sentencia switch para evaluar el valor de 'numero'
+      switch (numero) {
+        case 1:
+          // Si 'numero' es 1, se ejecuta este bloque
+          console.log("Uno");
+        // Sin break, continuará ejecutando el siguiente case
+
+        case 2:
+          // Si 'numero' es 2 o el case anterior no tuvo break, se ejecuta este bloque
+          console.log("Dos");
+        // Sin break, continuará ejecutando el siguiente case
+
+        case 3:
+          // Si 'numero' es 3 o los cases anteriores no tuvieron break, se ejecuta este bloque
+          console.log("Tres");
+          break; // Terminamos la ejecución del switch
+      }
+
+      //---------------------------------------------------------------------------------------------
+      console.log(
+        "-----------------Ejemplo de switch con expresiones----------------------------"
+      );
+
+      let edad = 25;
+
+      // Usamos una sentencia switch para evaluar el valor de una expresión
+      switch (true) {
+        case edad >= 0 && edad <= 12:
+          // Si la edad está entre 0 y 12, se ejecuta este bloque
+          console.log("Niño");
+          break; // Terminamos la ejecución del switch
+
+        case edad >= 13 && edad <= 19:
+          // Si la edad está entre 13 y 19, se ejecuta este bloque
+          console.log("Adolescente");
+          break; // Terminamos la ejecución del switch
+
+        case edad >= 20 && edad <= 59:
+          // Si la edad está entre 20 y 59, se ejecuta este bloque
+          console.log("Adulto");
+          break; // Terminamos la ejecución del switch
+
+        case edad >= 60:
+          // Si la edad es 60 o más, se ejecuta este bloque
+          console.log("Anciano");
+          break; // Terminamos la ejecución del switch
+
+        default:
+          // Si la edad no coincide con ningún case, se ejecuta este bloque
+          console.log("Edad no válida");
+          break; // Terminamos la ejecución del switch
+      }
+
+      //---------------------------------------------------------------------------------------------
+    </script>
+  </body>
+</html>

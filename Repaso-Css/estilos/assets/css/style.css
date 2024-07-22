@@ -1,0 +1,102 @@
+/* Colores y Fondos */
+
+/* Aplicamos un color de fondo y de texto específicos a la clase .color-example */
+.color-example {
+    background-color: #f0f8ff; /* Color de fondo azul claro */
+    color: #333; /* Color de texto gris oscuro */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Aplicamos un fondo de gradiente a la clase .gradient-background */
+.gradient-background {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradiente de naranja a rosado */
+    color: #fff; /* Color de texto blanco */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Tipografía */
+
+/* Aplicamos una fuente y tamaño de letra específicos a la clase .typography-example */
+.typography-example {
+    font-family: 'Arial', sans-serif; /* Fuente Arial */
+    font-size: 18px; /* Tamaño de letra */
+    color: #4a4a4a; /* Color de texto gris */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Aplicamos sombra al texto de la clase .text-shadow-example */
+.text-shadow-example {
+    font-family: 'Georgia', serif; /* Fuente Georgia */
+    font-size: 24px; /* Tamaño de letra */
+    color: #333; /* Color de texto gris oscuro */
+    text-shadow: 2px 2px 4px #aaa; /* Sombra de texto */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Layout */
+
+/* Ejemplo básico de layout usando Flexbox */
+.layout-example {
+    display: flex; /* Habilitamos Flexbox */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    height: 100px; /* Altura fija */
+    background-color: #e0ffe0; /* Color de fondo verde claro */
+    border: 1px solid #ccc; /* Borde gris claro */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Ejemplo básico de layout usando Grid */
+.grid-example {
+    display: grid; /* Habilitamos Grid */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 10px; /* Espacio entre elementos */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.grid-item {
+    background-color: #d0e1f9; /* Color de fondo azul claro */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrado de texto */
+    border: 1px solid #aaa; /* Borde gris */
+}
+
+/* Animaciones y Transiciones */
+
+/* Ejemplo de transición en .transition-example */
+.transition-example {
+    background-color: #ffddcc; /* Color de fondo inicial */
+    padding: 10px; /* Espaciado interno */
+    transition: background-color 0.5s ease; /* Transición de color de fondo */
+}
+
+.transition-example:hover {
+    background-color: #ffbb99; /* Color de fondo al pasar el ratón */
+}
+
+/* Ejemplo de animación en .animation-example */
+@keyframes example-animation {
+    0% {
+        transform: translateX(0);
+        background-color: #ffcc00;
+    }
+    50% {
+        transform: translateX(50px);
+        background-color: #ff9900;
+    }
+    100% {
+        transform: translateX(0);
+        background-color: #ffcc00;
+    }
+}
+
+.animation-example {
+    width: 100px; /* Ancho del elemento */
+    height: 100px; /* Altura del elemento */
+    background-color: #ffcc00; /* Color de fondo inicial */
+    animation: example-animation 2s infinite; /* Aplicación de la animación */
+}

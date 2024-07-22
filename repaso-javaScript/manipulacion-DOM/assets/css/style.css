@@ -1,0 +1,23 @@
+/* Estilos básicos para mejorar la visibilidad de los cambios en el DOM */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #titulo {
+    color: darkred;
+  }
+  
+  button {
+    margin-top: 10px;
+    display: block;
+  }
+  
+  ul {
+    margin-top: 20px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  

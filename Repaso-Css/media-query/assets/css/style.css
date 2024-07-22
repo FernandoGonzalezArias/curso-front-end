@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+@media (min-width: 576px) {
+    body {
+        background-color: red;
+    }
+    h1 {
+        color: black;
+    }
+    #size-info::after {
+        content: "Tamaño actual: 576px o más - Tipo de pantalla: Pequeña";
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: blue;
+    }
+    h1 {
+        color: yellowgreen;
+    }
+    #size-info::after {
+        content: "Tamaño actual: 768px o más - Tipo de pantalla: Mediana";
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        background-color: blueviolet;
+    }
+    h1 {
+        color: blue;
+    }
+    #size-info::after {
+        content: "Tamaño actual: 992px o más - Tipo de pantalla: Grande";
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-color: aqua;
+    }
+    h1 {
+        color: violet;
+    }
+    #size-info::after {
+        content: "Tamaño actual: 1200px o más - Tipo de pantalla: Extra Grande";
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        background-color: burlywood;
+    }
+    h1 {
+        color: greenyellow;
+    }
+    #size-info::after {
+        content: "Tamaño actual: 1400px o más - Tipo de pantalla: Extra Extra Grande";
+    }
+}

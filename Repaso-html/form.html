@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Completo en HTML</title>
+    <style>
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            width: auto;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario Completo en HTML</h1>
+    
+    <form action="/submit" method="post">
+        <!-- Text input -->
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <!-- Password input -->
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <!-- Email input -->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <!-- Number input -->
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age" min="1" max="100" required>
+        
+        <!-- Date input -->
+        <label for="dob">Fecha de nacimiento:</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <!-- Time input -->
+        <label for="appt">Hora de cita:</label>
+        <input type="time" id="appt" name="appt">
+        
+        <!-- Color input -->
+        <label for="favcolor">Color favorito:</label>
+        <input type="color" id="favcolor" name="favcolor">
+        
+        <!-- Range input -->
+        <label for="satisfaction">Satisfacción (0-100):</label>
+        <input type="range" id="satisfaction" name="satisfaction" min="0" max="100">
+        
+        <!-- Checkbox input -->
+        <label for="terms">Aceptar términos:</label>
+        <input type="checkbox" id="terms" name="terms" required>
+        
+        <!-- Radio input -->
+        <p>Género:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Masculino</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Femenino</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Otro</label>
+        
+        <!-- Select input -->
+        <label for="country">País:</label>
+        <select id="country" name="country" required>
+            <option value="mx">México</option>
+            <option value="es">España</option>
+            <option value="us">Estados Unidos</option>
+            <option value="ar">Argentina</option>
+        </select>
+        
+        <!-- Textarea -->
+        <label for="comments">Comentarios:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        
+        <!-- File input -->
+        <label for="resume">Subir CV:</label>
+        <input type="file" id="resume" name="resume">
+        
+        <!-- Submit button -->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

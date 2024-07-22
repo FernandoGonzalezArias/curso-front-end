@@ -1,0 +1,80 @@
+/* Reset básico para eliminar márgenes y paddings predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos del body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Contenedor principal utilizando Grid Layout */
+body {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr; /* Tres columnas con diferentes proporciones */
+    grid-template-rows: auto 1fr auto;  /* Alturas automáticas para header y footer, y flexible para main */
+    min-height: 100vh; /* Para asegurar que la página ocupe al menos el alto de la ventana */
+}
+
+/* Estilos para el header */
+header {
+    grid-area: header;
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Estilos para la navegación */
+nav {
+    grid-area: nav;
+    background: #f4f4f4;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin: 0.5rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos para el main */
+main {
+    grid-area: main;
+    padding: 1rem;
+}
+
+article {
+    background: #e2e2e2;
+    padding: 1rem;
+}
+
+/* Estilos para el aside */
+aside {
+    grid-area: aside;
+    background: #f4f4f4;
+    padding: 1rem;
+}
+
+/* Estilos para el footer */
+footer {
+    grid-area: footer;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

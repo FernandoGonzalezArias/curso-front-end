@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>variables</h1>
+
+    <script>
+      //------------------------------------------------------------------------------------------------------
+      console -
+        log(
+          "----------------------Ejemplo de declaración de variables usando var--------------------------"
+        );
+
+      // Declaramos una variable llamada 'nombre' usando 'var'
+      var nombre = "Juan"; // Asignamos el valor "Juan"
+
+      // Imprimimos el valor de 'nombre' en la consola
+      console.log("Nombre:", nombre);
+
+      //------------------------------------------------------------------------------------------------------
+      console -
+        log(
+          "----------------------Ejemplo de declaración de variables usando let------------------"
+        );
+
+      // Declaramos una variable llamada 'edad' usando 'let'
+      let edad = 25; // Asignamos el valor 25
+
+      // Imprimimos el valor de 'edad' en la consola
+      console.log("Edad:", edad);
+
+      //------------------------------------------------------------------------------------------------------
+      console -
+        log(
+          "----------------------Ejemplo de declaración de variables usando const------------------"
+        );
+
+      // Declaramos una constante llamada 'PI' usando 'const'
+      const PI = 3.14; // Asignamos el valor 3.14
+
+      // Imprimimos el valor de 'PI' en la consola
+      console.log("PI:", PI);
+
+      //------------------------------------------------------------------------------------------------------
+      console -
+        log(
+          "----------------------Ejemplo de reasignación de variables------------------"
+        );
+
+      // Intentamos reasignar un nuevo valor a 'edad'
+      edad = 30; // Ahora 'edad' tiene el valor 30
+      console.log("Nueva Edad:", edad); // Imprimimos el nuevo valor de 'edad'
+
+      //------------------------------------------------------------------------------------------------------
+      console -
+        log(
+          "----------------------Ejemplo de error al reasignar una constante------------------"
+        );
+
+      // Intentamos reasignar un nuevo valor a 'PI'
+      // PI = 3.14159; // Esto generaría un error porque no se puede cambiar una constante
+
+      //------------------------------------------------------------------------------------------------------
+      console -
+        log(
+          "-------------------Ejemplo de alcance de variables (scope)-----------------"
+        );
+
+      // Función que muestra el uso de variables locales
+      function mostrarAlcance() {
+        let mensaje = "Hola desde la función"; // Variable local
+        console.log(mensaje); // Imprimimos la variable local
+      }
+
+      // Llamamos a la función
+      mostrarAlcance();
+
+      // Intentamos imprimir 'mensaje' fuera de la función
+      // console.log(mensaje); // Esto generaría un error porque 'mensaje' no está definida fuera de la función
+
+      //------------------------------------------------------------------------------------------------------
+      console -
+        log(
+          "------------------ Ejemplo de variables globales-----------------"
+        );
+
+      // Declaramos una variable global
+      var globalVariable = "Soy global"; // Esta variable es accesible en cualquier parte del código
+
+      // Función que imprime la variable global
+      function imprimirVariableGlobal() {
+        console.log(globalVariable); // Imprimimos la variable global
+      }
+
+      // Llamamos a la función
+      imprimirVariableGlobal(); // Imprime "Soy global"
+
+      //------------------------------------------------------------------------------------------------------
+      console -
+        log(
+          "------------------Ejemplo de tipos de datos en variables-----------------"
+        );
+
+      // Declaramos una variable de tipo string
+      let saludo = "Hola"; // Cadena de texto
+
+      // Declaramos una variable de tipo number
+      let numero = 42; // Número entero
+
+      // Declaramos una variable de tipo boolean
+      let esVerdadero = true; // Valor booleano
+
+      // Imprimimos los tipos de datos
+      console.log("Tipo de saludo:", typeof saludo); // Imprimimos el tipo de 'saludo'
+      console.log("Tipo de numero:", typeof numero); // Imprimimos el tipo de 'numero'
+      console.log("Tipo de esVerdadero:", typeof esVerdadero); // Imprimimos el tipo de 'esVerdadero'
+
+      //------------------------------------------------------------------------------------------------------
+      console -
+        log(
+          "-----------------Ejemplo de uso de variables en una operación-----------------"
+        );
+
+      // Declaramos dos variables numéricas
+      let a = 5; // Primer número
+      let b = 10; // Segundo número
+
+      // Realizamos una operación aritmética
+      let suma = a + b; // Calculamos la suma de 'a' y 'b'
+
+      // Imprimimos el resultado de la suma
+      console.log("La suma de a y b es:", suma); // Imprime "La suma de a y b es: 15"
+
+      //------------------------------------------------------------------------------------------------------
+    </script>
+  </body>
+</html>

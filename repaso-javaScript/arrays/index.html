@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>arrays</h1>
+
+    <script>
+      //--------------------------------------------------------------------------------------------------------
+      console.log(
+        "---------------Ejemplo de declaración de un array-----------------------"
+      );
+
+      // Declaramos un array llamado 'frutas' y lo inicializamos con algunos valores
+      let frutas = ["manzana", "banana", "naranja", "uva"];
+
+      // Imprimimos el array en la consola
+      console.log("Frutas:", frutas); // Imprime "Frutas: [ 'manzana', 'banana', 'naranja', 'uva' ]"
+
+      //--------------------------------------------------------------------------------------------------------
+      console.log(
+        "--------------Ejemplo de acceder a elementos del array-----------------------"
+      );
+
+      // Accedemos al primer elemento del array (índice 0)
+      console.log("Primera fruta:", frutas[0]); // Imprime "Primera fruta: manzana"
+
+      // Accedemos al tercer elemento del array (índice 2)
+      console.log("Tercera fruta:", frutas[2]); // Imprime "Tercera fruta: naranja"
+
+      //--------------------------------------------------------------------------------------------------------
+      console.log(
+        "--------------Ejemplo de modificar un elemento del array-----------------------"
+      );
+
+      // Modificamos el segundo elemento del array (índice 1)
+      frutas[1] = "fresa"; // Cambiamos "banana" por "fresa"
+
+      // Imprimimos el array modificado
+      console.log("Frutas modificadas:", frutas); // Imprime "Frutas modificadas: [ 'manzana', 'fresa', 'naranja', 'uva' ]"
+
+      //--------------------------------------------------------------------------------------------------------
+      console.log(
+        "-------------Ejemplo de agregar elementos al array-----------------------"
+      );
+
+      // Agregamos una nueva fruta al final del array
+      frutas.push("kiwi"); // Ahora el array incluye "kiwi"
+
+      // Imprimimos el array después de agregar un elemento
+      console.log("Frutas después de agregar kiwi:", frutas); // Imprime "Frutas después de agregar kiwi: [...]"
+
+      //--------------------------------------------------------------------------------------------------------
+      console.log(
+        "-------------Ejemplo de eliminar elementos del array-----------------------"
+      );
+
+      // Eliminamos el último elemento del array
+      frutas.pop(); // Se elimina "kiwi"
+
+      // Imprimimos el array después de eliminar un elemento
+      console.log("Frutas después de eliminar kiwi:", frutas); // Imprime "Frutas después de eliminar kiwi: [...]"
+
+      //--------------------------------------------------------------------------------------------------------
+      console.log(
+        "-------------Ejemplo de iterar sobre un array----------------------"
+      );
+
+      // Usamos un bucle for para recorrer el array
+      for (let i = 0; i < frutas.length; i++) {
+        // Imprimimos cada fruta en la consola
+        console.log("Fruta en posición", i, ":", frutas[i]);
+      }
+
+      //--------------------------------------------------------------------------------------------------------
+      console.log(
+        "-------------Ejemplo de usar el método forEach----------------------"
+      );
+
+      // Usamos el método forEach para recorrer el array
+      frutas.forEach(function (fruta, indice) {
+        // Imprimimos cada fruta y su índice
+        console.log("Fruta en índice", indice, "es:", fruta);
+      });
+
+      //--------------------------------------------------------------------------------------------------------
+      console.log(
+        "-------------Ejemplo de buscar un elemento en el array----------------------"
+      );
+
+      // Usamos el método indexOf para buscar la posición de "naranja"
+      let indiceNaranja = frutas.indexOf("naranja"); // Guardamos el índice de "naranja"
+
+      // Imprimimos el índice de "naranja"
+      console.log("Índice de naranja:", indiceNaranja); // Imprime el índice de "naranja"
+
+      //--------------------------------------------------------------------------------------------------------
+      console.log(
+        "-------------Ejemplo de crear un array multidimensional----------------------"
+      );
+
+      // Creamos un array multidimensional de frutas
+      let frutasTropicales = [
+        ["mango", "papaya", "piña"],
+        ["coco", "guayaba", "kiwi"],
+      ];
+
+      // Imprimimos el array multidimensional
+      console.log("Frutas tropicales:", frutasTropicales); // Imprime el array multidimensional
+
+      // Accedemos a un elemento del array multidimensional
+      console.log("Fruta tropical:", frutasTropicales[0][1]); // Imprime "Fruta tropical: papaya"
+
+      //--------------------------------------------------------------------------------------------------------
+      console.log(
+        "-------------Ejemplo de ordenar un array----------------------"
+      );
+
+      // Creamos un nuevo array de números
+      let numeros = [5, 2, 9, 1, 5, 6];
+
+      // Ordenamos el array en orden ascendente
+      numeros.sort((a, b) => a - b); // Ordenamos numéricamente
+
+      // Imprimimos el array ordenado
+      console.log("Números ordenados:", numeros); // Imprime el array ordenado
+
+      //--------------------------------------------------------------------------------------------------------
+    </script>
+  </body>
+</html>

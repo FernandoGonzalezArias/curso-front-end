@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+
+/* Contenedor flex básico */
+.flex-container {
+    display: flex;
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* flex-direction: row (default) */
+/* Organiza los elementos en una fila horizontal */
+.direction-row {
+    /* flex-direction default es row, no necesita declaración explícita */
+    background-color: aqua;
+}
+
+/* flex-direction: column */
+/* Organiza los elementos en una columna vertical */
+.direction-column {
+    flex-direction: column;
+}
+
+/* justify-content: flex-start (default) */
+/* Alinea los elementos al inicio del contenedor */
+.justify-start {
+    /* justify-content default es flex-start, no necesita declaración explícita */
+    background-color: aqua;
+}
+
+/* justify-content: center */
+/* Centra los elementos horizontalmente dentro del contenedor */
+.justify-center {
+    justify-content: center;
+}
+
+/* justify-content: space-between */
+/* Distribuye los elementos con espacio entre ellos */
+.justify-space-between {
+    justify-content: space-between;
+}
+
+/* align-items: flex-start */
+/* Alinea los elementos al inicio del contenedor verticalmente */
+.align-start {
+    align-items: flex-start;
+}
+
+/* align-items: center */
+/* Centra los elementos verticalmente dentro del contenedor */
+.align-center {
+    align-items: center;
+}
+
+/* flex-wrap: wrap */
+/* Permite que los elementos se envuelvan a la siguiente línea si no caben en una sola fila */
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* Estilos de los elementos flex */
+.flex-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    flex: 1; /* Permite que los elementos crezcan para ocupar el espacio disponible */
+}
+
+/* Elemento alto para demostrar align-items */
+.flex-item.tall {
+    height: 100px; /* Para demostrar la alineación vertical con align-items */
+}

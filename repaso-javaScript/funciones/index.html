@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>funciones</h1>
+
+    <script>
+      //---------------------------------------------------------------------------------------------------
+      console.log(
+        "--------------------Ejemplo de una función simple------------------------------"
+      );
+
+      // Declaramos una función llamada 'saludar' que no recibe parámetros
+      function saludar() {
+        // Imprimimos un saludo en la consola
+        console.log("¡Hola, mundo!");
+      }
+
+      // Llamamos a la función 'saludar'
+      saludar(); // Imprime "¡Hola, mundo!"
+
+      // Ejemplo de una función con parámetros
+
+      // Declaramos una función llamada 'sumar' que recibe dos parámetros: 'a' y 'b'
+      function sumar(a, b) {
+        // Retornamos la suma de 'a' y 'b'
+        return a + b;
+      }
+
+      // Llamamos a la función 'sumar' con dos argumentos y almacenamos el resultado
+      let resultado = sumar(5, 10); // resultado ahora es 15
+
+      // Imprimimos el resultado de la suma
+      console.log("La suma es:", resultado); // Imprime "La suma es: 15"
+
+      //---------------------------------------------------------------------------------------------------
+      console.log(
+        "-------------Ejemplo de una función con un valor por defecto-----------------"
+      );
+
+      // Declaramos una función llamada 'saludarPersonalizado' con un parámetro con valor por defecto
+      function saludarPersonalizado(nombre = "invitado") {
+        // Imprimimos un saludo personalizado en la consola
+        console.log("¡Hola, " + nombre + "!");
+      }
+
+      // Llamamos a la función sin argumentos
+      saludarPersonalizado(); // Imprime "¡Hola, invitado!"
+
+      // Llamamos a la función con un argumento
+      saludarPersonalizado("Juan"); // Imprime "¡Hola, Juan!"
+
+      //---------------------------------------------------------------------------------------------------
+      console.log(
+        "-------------Ejemplo de una función anónima-----------------"
+      );
+
+      // Asignamos una función anónima a una variable llamada 'multiplicar'
+      let multiplicar = function (a, b) {
+        return a * b; // Retornamos el producto de 'a' y 'b'
+      };
+
+      // Llamamos a la función 'multiplicar' y almacenamos el resultado
+      let producto = multiplicar(4, 5); // producto ahora es 20
+
+      // Imprimimos el resultado de la multiplicación
+      console.log("El producto es:", producto); // Imprime "El producto es: 20"
+
+      //---------------------------------------------------------------------------------------------------
+      console.log(
+        "-------------Ejemplo de una función de flecha-----------------"
+      );
+
+      // Declaramos una función de flecha llamada 'restar'
+      const restar = (a, b) => {
+        return a - b; // Retornamos la resta de 'a' y 'b'
+      };
+
+      // Llamamos a la función 'restar' y almacenamos el resultado
+      let diferencia = restar(10, 6); // diferencia ahora es 4
+
+      // Imprimimos el resultado de la resta
+      console.log("La diferencia es:", diferencia); // Imprime "La diferencia es: 4"
+
+      //---------------------------------------------------------------------------------------------------
+      console.log(
+        "-------------Ejemplo de una función que retorna otro valor----------------"
+      );
+
+      // Declaramos una función llamada 'esPar' que verifica si un número es par
+      function esPar(num) {
+        return num % 2 === 0; // Retorna true si 'num' es par, false si es impar
+      }
+
+      // Llamamos a la función 'esPar' con un número y almacenamos el resultado
+      let par = esPar(8); // par ahora es true
+
+      // Imprimimos el resultado de la verificación
+      console.log("¿Es 8 un número par?", par); // Imprime "¿Es 8 un número par? true"
+
+      //---------------------------------------------------------------------------------------------------
+      console.log(
+        "-------------Ejemplo de una función recursiva----------------"
+      );
+
+      // Declaramos una función recursiva llamada 'factorial' que calcula el factorial de un número
+      function factorial(n) {
+        // Si 'n' es 0, retornamos 1 (caso base)
+        if (n === 0) {
+          return 1;
+        }
+        // Retornamos 'n' multiplicado por el factorial de 'n - 1'
+        return n * factorial(n - 1);
+      }
+
+      // Llamamos a la función 'factorial' con un número y almacenamos el resultado
+      let fact = factorial(5); // fact ahora es 120
+
+      // Imprimimos el resultado del factorial
+      console.log("El factorial de 5 es:", fact); // Imprime "El factorial de 5 es: 120"
+
+      //---------------------------------------------------------------------------------------------------
+    </script>
+  </body>
+</html>
